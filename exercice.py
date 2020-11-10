@@ -4,17 +4,33 @@
 
 # TODO: Importez vos modules ici
 import numpy as np
+import random
+import matplotlib.pyplot as plt
 
 
 # TODO: Définissez vos fonctions ici (il en manque quelques unes)
 def linear_values() -> np.ndarray:
-    return np.array([])
+    return np.linspace(-1.3, 2.5, 64)
 
 
 def coordinate_conversion(cartesian_coordinates: np.ndarray) -> np.ndarray:
+    pass
+    #return np.array([for i in ca])
 
 
 def find_closest_index(values: np.ndarray, number: float) -> int:
+    #return np.where(values == number)[0]
+    pass
+def yfunct(x):
+    return (x**2) * np.sin(1 / x**2) + x
+
+def graph():
+    #arrrrrr = np.linspace(-1, 1, 250)
+    #plt.xlim(-1, 1)
+    #plt.plot()
+    #plt.show()
+    pass
+
 def montecarlo():
     approximation = 0
     dans_le_cercle = 0
@@ -42,8 +58,8 @@ def montecarlo():
         approximation = 4 * (dans_le_cercle / (pas_ds_le_cercle + dans_le_cercle))
 
 
-        plt.scatter(liste_x_dans, liste_y_dans)
-        plt.scatter(liste_x_pas_dedans, liste_y_pas_dedans)
+    plt.scatter(liste_x_dans, liste_y_dans)
+    plt.scatter(liste_x_pas_dedans, liste_y_pas_dedans)
 
     plt.show()
 
